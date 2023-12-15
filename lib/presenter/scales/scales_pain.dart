@@ -6,8 +6,10 @@ class ScalesPain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MyAppBar(
-      title: 'Escala Universal de Dor',
+    return const Scaffold(
+      appBar: MyAppBar(
+        title: 'Escala Universal de Dor',
+      ),
     );
   }
 }

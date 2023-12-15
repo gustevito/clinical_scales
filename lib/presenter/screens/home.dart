@@ -1,3 +1,4 @@
+import 'package:clinical_scales/components/appbar.dart';
 import 'package:clinical_scales/components/scales_button_tile.dart';
 import 'package:clinical_scales/presenter/scales/scales_glasgow.dart';
 import 'package:clinical_scales/presenter/scales/scales_pain.dart';
@@ -13,15 +14,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Theme.of(context).colorScheme.background,
-        title: Text(
-          'Clinical Scales',
-          style: GoogleFonts.playfairDisplay(
-              color: Theme.of(context).colorScheme.onBackground),
-        ),
-      ),
+      appBar: MyAppBar(title: 'Escalas Clínicas'),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
